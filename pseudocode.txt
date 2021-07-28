@@ -1,0 +1,97 @@
+# ho_df_box_val = len(self.driver.find_elements(*AdminPortalLocators.HO_DF_BOX)) 
+            # home_policy_num_val = len(self.driver.find_elements(*AdminPortalLocators.HOME_POLICY_NUM))
+            # ho_df_box_val_2 = len(self.driver.find_elements(*AdminPortalLocators.HO_DF_BOX_2)) 
+            # home_policy_num_val_2 = len(self.driver.find_elements(*AdminPortalLocators.HOME_POLICY_NUM_2))
+            # upd_btn_val = len(self.driver.find_elements(*AdminPortalLocators.UPDATE_SHELL))
+            
+            # if upd_btn_val != 0 and renewed ==0 or renewed2 == 0:
+            #     update_shell_btn = self.driver.find_element(*AdminPortalLocators.UPDATE_SHELL)
+            #     if ho_df_box_val != 0 and home_policy_num_val != 0:
+            #         ho_df_box = self.driver.find_element(*AdminPortalLocators.HO_DF_BOX).text
+            #         home_policy_num = self.driver.find_element(*AdminPortalLocators.HOME_POLICY_NUM).text
+            #         update_shell_btn.click()
+            #         self.driver.implicitly_wait(10)
+            #         input_box = self.driver.find_element(*AdminPortalLocators.HO_DF_INPUT_BOX)
+            #         agency_name = self.driver.find_element(*AdminPortalLocators.AGENCY_NAME)
+            #         self.driver.implicitly_wait(10)
+            #         actions.move_to_element(agency_name).send_keys('1341').send_keys(Keys.SPACE).perform()
+            #         temp_agent = self.driver.find_element(*AdminPortalLocators.AGENT_TOGGLE_NAME) #John Macdonald
+            #         actions.move_to_element(temp_agent).click().perform()
+            #     elif ho_df_box_val_2 !=0 and home_policy_num_val_2 !=0:
+            #         print(policy)
+            #         ho_df_box_2 = self.driver.find_element(*AdminPortalLocators.HO_DF_BOX_2).text
+            #         home_policy_num_2 = self.driver.find_element(*AdminPortalLocators.HOME_POLICY_NUM_2).text
+            #         update_shell_btn.click()
+            #         time.sleep(3)
+            #         input_box = self.driver.find_element(*AdminPortalLocators.HO_DF_INPUT_BOX)
+            #         agency_name = self.driver.find_element(*AdminPortalLocators.AGENCY_NAME)
+            #         self.driver.implicitly_wait(10)
+            #         agency_name.send_keys('1341')
+            #         agency_name.send_keys(Keys.SPACE)
+            #         temp_agent = self.driver.find_element(*AdminPortalLocators.AGENT_TOGGLE_NAME) #John Macdonald
+            #         actions.move_to_element(temp_agent).click().perform()
+            #     elif ho_df_box_val == 0 and home_policy_num_val == "Not Available":
+            #         actions = ActionChains(self.driver)
+            #         update_shell_btn.click()
+            #         self.driver.implicitly_wait(10)
+            #         input_box = self.driver.find_element(*AdminPortalLocators.HO_DF_INPUT_BOX)
+            #         agency_name = self.driver.find_element(*AdminPortalLocators.AGENCY_NAME)
+            #         temp_agent = self.driver.find_element(*AdminPortalLocators.AGENT_TOGGLE_NAME) #John Macdonald
+            #         actions.move_to_element(input_box).click().send_keys('Other').perform()
+            #         self.driver.implicitly_wait(10)
+            #         actions.move_to_element(agency_name).click().send_keys('1341').send_keys(Keys.SPACE).move_to_element(temp_agent).click().perform()
+                
+            # close = self.driver.find_element(*AdminPortalLocators.CLOSE)
+            # close.click()
+            # self.driver.switch_to.default_content()
+            # self.driver.refresh()
+
+            //button[contains(@data-test-id, '2014100911285001362285')]
+            //a[contains(@data-click, '[["setUserStart",["CANCEL"]]')]
+            //a[contains(@data-click, '[["setUserStart",["CANCEL"]],["doClose",[":event",null,null,false]]]')]
+            # if len(self.driver.find_elements(By.XPATH, '//*[@id="RULE_KEY"]/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div/span/button')) !=0:
+            #     self.driver.find_element(By.XPATH, '//*[@id="RULE_KEY"]/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div/span/button').click()
+            # elif len(self.driver.find_elements(By.XPATH, '/html/body/div[3]/form/div[3]/header/div/div/div/div/div[2]/div/div/div/div/div[1]/div/div/span/button')) != 0:
+            #     self.driver.find_element(By.XPATH, '/html/body/div[3]/form/div[3]/header/div/div/div/div/div[2]/div/div/div/div/div[1]/div/div/span/button').click()
+            # elif len(self.driver.find_elements(By.XPATH, '/html/body/div[3]/form/div[3]/header/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div/span/button')) != 0:
+            #     self.driver.find_element(By.XPATH, '/html/body/div[3]/form/div[3]/header/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div/span/button').click()
+            # if len(self.driver.find_elements(By.XPATH, '/html/body/div[7]/ul/li[3]/a')) !=0 and len(self.driver.find_elements(By.XPATH, '/html/body/div[7]/ul/li[4]/a')) == 0:
+                #     close = self.driver.find_element(By.XPATH, '/html/body/div[7]/ul/li[3]/a')
+                #     close.click()
+                # elif len(self.driver.find_elements(By.XPATH, '/html/body/div[7]/ul/li[4]/a')) != 0:
+                #     close_2 = self.driver.find_element(By.XPATH, '/html/body/div[7]/ul/li[4]/a')
+                #     close_2.click()
+                # elif len(self.driver.find_elements(By.XPATH, '/html/body/div[6]/ul/li[4]/a')) !=0 and len(self.driver.find_elements(By.XPATH, '/html/body/div[6]/ul/li[6]/a')) == 0:
+                #     close_3 = self.driver.find_element(By.XPATH, '/html/body/div[6]/ul/li[4]/a')
+                #     close_3.click()
+                # elif len(self.driver.find_elements(By.XPATH, '/html/body/div[6]/ul/li[6]/a')) != 0:
+                #     close_4 = self.driver.find_element(By.XPATH, '/html/body/div[6]/ul/li[6]/a')
+                #     close_4.click()
+                # elif len(self.driver.find_elements(By.XPATH, '/html/body/div[6]/ul/li[2]/a')) != 0:
+                #     close_5 = self.driver.find_element(By.XPATH, '/html/body/div[6]/ul/li[2]/a')
+                #     close_5.click()
+                # else:
+                #     close_6 = self.driver.find_element(By.XPATH, '/html/body/div[6]/ul/li[3]/a')
+                #     close_6.click()
+            update_shell_btn = //a[contains(@data-click, "UpdateShell")]
+            renewed_check_box = //div[contains(@data-ui-meta, "NonRenewable")]//span[contains(@data-test-id, "201908120909080652595220")]//img[contains(@alt, "true")]
+            agency_name = //input[contains(@id, "SeachLocation")]
+
+        def _agent_toggle_list(self, workbook_path):
+        """
+        Helper funciton imports an excel spreadsheet that has been filtered
+        in our _unable_error helper method above. It loops through
+        the data extracting policy numbers and appends it to our policy_num_list.
+
+        Returns: A list of policy numbers to be used in our agent_toggle function
+        """
+        new_wb = self._unable_error(workbook_path)
+        ws = new_wb.active
+        policy_num_list = []
+        for row in ws.iter_rows(min_row=ws.min_row+1 , max_row=ws.max_row, min_col=4, max_col=4):
+            row = str(row)
+            policy = ws[row[14:row.index('>')]].value
+            policy_line = policy.split()
+            policy_num_list.append(policy_line[1])
+        print(policy_num_list)
+        return(policy_num_list)
