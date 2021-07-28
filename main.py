@@ -6,8 +6,8 @@ Description:
 The purpose of this script is to automate the manual click & point process that was formerly used to requeue and remove errors within the Broken Queue
 in Pega Designer Studio Code which was used by Palomar Insurance. This script consists of four python files: (main.py, page.py, locators.py, element.py) 
 which purpose is modeled after the framework suggested by the Selenium library which is the primary library used wihthin this script. The program can be 
-ran on main.py only  
-
+ran on main.py only. Code for the automation process are located primarily on page.py and element locators can be found within locators.py. The element.py
+allows for element locators to be properly processed before being used.
 """
 
 import unittest
