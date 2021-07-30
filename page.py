@@ -371,7 +371,7 @@ class StudioPage(BasePage, BasePageElement):
                 self.driver.find_element_by_xpath(requeue_btn).click()
                 self.driver.refresh()
         else:
-            print('All policies have been requeued')
+            print('All policies have been requeued.')
 
     def _goal_seeking_error(self, workbook_path):
         """
@@ -482,3 +482,5 @@ class StudioPage(BasePage, BasePageElement):
                 time.sleep(2)
                 self.driver.find_element_by_xpath(remove_btn).click()
                 self.driver.refresh()
+        else:
+            print("All policies with goal seeking error have been removed.")

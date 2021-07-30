@@ -36,7 +36,7 @@ class PegaProdPage(unittest.TestCase):
         self.options.add_argument("start-maximized")
         self.options.add_argument("disable-infobars")
         self.options.add_argument("--disable-extensions")
-        self.driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=self.options)
+        self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=self.options)
         self.driver.get("https://palomr-psic-prod1.pegacloud.net/prweb/")
 
     def test_login(self):
