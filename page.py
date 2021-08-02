@@ -119,6 +119,8 @@ class MainPage(BasePage, BasePageElement):
             policy_num_list.append(policy_line[1])
 
         print(policy_num_list)
+        num_of_policies = len(policy_num_list)
+        print(f'The number of policies that need to be checked is: {num_of_policies}')
         return(policy_num_list)
 
     def _admin_portal(self):

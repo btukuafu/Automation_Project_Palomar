@@ -47,13 +47,13 @@ class PegaProdPage(unittest.TestCase):
         main_page.agent_toggle(self.xcel_file)
         time.sleep(5)
 
-    def test_requeue(self):
-        studio_page = page.StudioPage(self.driver)
-        studio_page.login(self.username, self.password)
-        studio_page.remove(self.xcel_file)
-        time.sleep(2)
-        self.requeue_file = input("Enter the Requeue File Path: ")
-        studio_page.requeue(self.requeue_file)
+    # def test_requeue(self):
+    #     studio_page = page.StudioPage(self.driver)
+    #     studio_page.login(self.username, self.password)
+    #     studio_page.remove(self.xcel_file)
+    #     time.sleep(2)
+    #     self.requeue_file = input("Enter the Requeue File Path: ")
+    #     studio_page.requeue(self.requeue_file)
         
         
 
